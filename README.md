@@ -38,7 +38,7 @@ Task는 총 3가지로, 1. **[DBNet, DBNet++, PSENet, FCENet]**(Detection), **[S
 
 1. **Detection & Recognition**
 
-텍스트의 bbox 좌표값을 알아내기 위해 Detection model을 사용하였다. Detection model 중에서도 text가 기울어져 있거나 회전이 되어있는 text에 강건한 특징을 지니고 있는 model들을 추가적으로 선정하여 **DBNet, DBNet++, PSENet, FCENet**을 사용하였다. Recognition model의 경우에도 text의 curve, orientation에 구애 받지 않고 인식이 가능한 **SAR**과, ****언어적 사전 지식을 바탕으로 text를 인식하는 **ABINet,** 문맥을 고려하여 Recognition을 수행하는 **SATRN**을 활용해 Text를 추출해주었다. 
+텍스트의 bbox 좌표값을 알아내기 위해 Detection model을 사용하였다. Detection model 중에서도 text가 기울어져 있거나 회전이 되어있는 text에 강건한 특징을 지니고 있는 model들을 추가적으로 선정하여 **DBNet, DBNet++, PSENet, FCENet**을 사용하였다. Recognition model의 경우에도 text의 curve, orientation에 구애 받지 않고 인식이 가능한 **SAR**과, 언어적 사전 지식을 바탕으로 text를 인식하는 **ABINet,** 문맥을 고려하여 Recognition을 수행하는 **SATRN**을 활용해 Text를 추출해주었다. 
 
 Dataset의 경우, 영어 간판 및 표지판 데이터 셋인 **TextOCR dataset**과, **Incidental Scene Text dataset**을 활용해 학습에 사용하였다.  1차 output으로는 Detection의 bbox 좌표값과 Recognition을 통한 Text를 txt 파일로 추출해주는 코드를 구현하여 output을 뽑아냈다. 
 
