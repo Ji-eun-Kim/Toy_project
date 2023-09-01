@@ -27,12 +27,12 @@
 
 영어로 된 간판 및 표지판 이미지의 텍스트를 영→한 번역하여 배경만 남은 이미지와 합성하는 딥러닝 프로젝트를 진행하였다. 이를 통해 상호 이해와 소통을 원활하게 도와주는 효과 기대할 수 있을 것이라 기대된다.
 
-Task는 총 3가지로, 1. **[DBNet, DBNet++, PSENet, FCENet]**(Detection)**, [SAR, ABINet, SATRN]**(Recognition) 2. **[T5]**(Text translation) 3. **[SynthText]**(Image Composition) 로 진행하였다. 진행 방법은 다음과 같다.
+Task는 총 3가지로, 1. **[DBNet, DBNet++, PSENet, FCENet]**(Detection), **[SAR, ABINet, SATRN]**(Recognition) 2. **[T5]**(Text translation) 3. **[SynthText]**(Image Composition) 로 진행하였다. 진행 방법은 다음과 같다.
 
 1. Detection & Recognition model을 활용해 해당 텍스트에 대해 Bbox 좌표값과 해당 영어 text를 output 값으로 뽑아낸다.
-2. Detection&Recognition로부터 나온 영어 text를 한글로 번역해주도록 NLP model인 **‘T5’**를 학습 시킨 후, 번역된 한글 text를 output으로 뽑아낸다. 
-3. Detection model의 Bbox를 기반으로 텍스트를 지워주는 model인 **‘Stroke-based Scene Text Erasing’**로 배경의 텍스트를 지운다. 
-4. Detection의 bbox 좌표값과, T5의 한글 text, Stroke-based Scene Text Erasing의 ****지워진 배경을 input으로 받아, **OpenCV 라이브러리를 활용**해 SynthText를 진행한다.
+2. Detection&Recognition로부터 나온 영어 text를 한글로 번역해주도록 NLP model인 **T5**를 학습 시킨 후, 번역된 한글 text를 output으로 뽑아낸다. 
+3. Detection model의 Bbox를 기반으로 텍스트를 지워주는 model인 **Stroke-based Scene Text Erasing**로 배경의 텍스트를 지운다. 
+4. Detection의 bbox 좌표값과, T5의 한글 text, Stroke-based Scene Text Erasing의 지워진 배경을 input으로 받아, **OpenCV 라이브러리를 활용**해 SynthText를 진행한다.
 
 ----
 
@@ -40,7 +40,7 @@ Task는 총 3가지로, 1. **[DBNet, DBNet++, PSENet, FCENet]**(Detection)**, [S
 
 텍스트의 bbox 좌표값을 알아내기 위해 Detection model을 사용하였다. Detection model 중에서도 text가 기울어져 있거나 회전이 되어있는 text에 강건한 특징을 지니고 있는 model들을 추가적으로 선정하여 **DBNet, DBNet++, PSENet, FCENet**을 사용하였다. Recognition model의 경우에도 text의 curve, orientation에 구애 받지 않고 인식이 가능한 **SAR**과, ****언어적 사전 지식을 바탕으로 text를 인식하는 **ABINet,** 문맥을 고려하여 Recognition을 수행하는 **SATRN**을 활용해 Text를 추출해주었다. 
 
-Dataset의 경우, 영어 간판 및 표지판 데이터 셋인 **TextOCR dataset**과, ****Incidental Scene Text dataset****을 활용해 학습에 사용하였다.  1차 output으로는 Detection의 bbox 좌표값과 Recognition을 통한 Text를 txt 파일로 추출해주는 코드를 구현하여 output을 뽑아냈다. 
+Dataset의 경우, 영어 간판 및 표지판 데이터 셋인 **TextOCR dataset**과, **Incidental Scene Text dataset**을 활용해 학습에 사용하였다.  1차 output으로는 Detection의 bbox 좌표값과 Recognition을 통한 Text를 txt 파일로 추출해주는 코드를 구현하여 output을 뽑아냈다. 
 
 2. **Text translation**
 
