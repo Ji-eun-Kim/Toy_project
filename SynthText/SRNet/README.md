@@ -1,2 +1,2 @@
-참고  
+SRNet code
 https://github.com/Niwhskal/SRNet
