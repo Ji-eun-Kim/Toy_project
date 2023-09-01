@@ -85,10 +85,10 @@ Image Composition의 경우, 두 분야로 나누어 진행하였다. **1. 텍�
 
 <br/>
 
-## 8. 발표 자료 및 코드 링크
+## 8. 발표 자료 및 깃허브
 
 - 발표 자료  
 https://drive.google.com/file/d/1rOM6w_Og76kaWW6GRzes2DgshZWrrDUQ/view?usp=sharing
 
-- 깃허브 코드   
+- 깃허브    
 https://github.com/Ji-eun-Kim/X-AI_Toy_project/blob/main/README.md
