@@ -1,1 +1,1 @@
-Stroke-Based Scene Text Erasing code
+Stroke-Based Scene Text Erasing code 
