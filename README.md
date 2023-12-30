@@ -56,7 +56,7 @@ Image Composition의 경우, 두 분야로 나누어 진행하였다. **1. 텍�
 
 <br/>
 
-## 5. Inference 결과
+## 5. 결과
 <img src="https://github.com/Ji-eun-Kim/X-AI_Toy_project/assets/124686375/f4a56b3b-1c62-42fe-af48-b9c8efa7b1fd"> | <img src="https://github.com/Ji-eun-Kim/X-AI_Toy_project/assets/124686375/a148bc40-393a-4c36-92c9-b21aa184368d">
 ---|---|
 
