@@ -1,7 +1,6 @@
 <h2 align='center'> 이미지 내 문구 번역 및 원본 스타일 적용 </h2>
 <h3 align='center'> [인공지능학회 X:AI] Toy Project  </h3>  
 <h4 align='center'> (2023.07. ~ 2023.08.) </h4> 
-<br/>  
 
 ![Aqua Lines](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
 
