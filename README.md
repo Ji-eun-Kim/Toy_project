@@ -38,7 +38,7 @@ Task는 총 3가지로, 1. **[DBNet, DBNet++, PSENet, FCENet]**(Detection), **[S
 3. Detection model의 Bbox를 기반으로 텍스트를 지워주는 model인 **Stroke-based Scene Text Erasing**로 배경의 텍스트를 지운다. 
 4. Detection의 bbox 좌표값과, T5의 한글 text, Stroke-based Scene Text Erasing의 지워진 배경을 input으로 받아, **OpenCV 라이브러리를 활용**해 SynthText를 진행한다.
 
-----
+&nbsp;
 
 1. **Detection & Recognition**
 
@@ -67,6 +67,8 @@ Image Composition의 경우, 두 분야로 나누어 진행하였다. **1. 텍�
 <img width="611" alt="KakaoTalk_20230901_002124391_10" src="https://github.com/Ji-eun-Kim/Text-Data-Analysis/assets/124686375/58c0a4bd-89cb-4437-8f89-cddec9b61569"> | <img width="611" alt="KakaoTalk_20230901_002124391_11" src="https://github.com/Ji-eun-Kim/Text-Data-Analysis/assets/124686375/20f7c602-7c6a-48d8-8335-9b2c95b9b3f8">
 ---|---|
 
+&nbsp;
+
 ## 6. 느낀점 및 한계점
 
 8주라는 짧은 기간 동안 진행한 프로젝트였기 때문에 결과물에 대한 만족감이 부족했다. 그럼에도 제한된 환경 속에서 노력하고 협력하여 새로운 경험을 얻고 배우며 성장할 수 있게 되었다. 
@@ -74,6 +76,9 @@ Image Composition의 경우, 두 분야로 나누어 진행하였다. **1. 텍�
 각기 **다른 모델 환경 설정 문제**로 인해 **End to End 학습이 어려워** 개별 모델의 성능에 따라 최종 결과물의 품질이 크게 달라진다는 어려움이 존재했다. 따라서, 추후 end-to-end 형식의 py 파일로 개선하고, 한 번에 효율적으로 결과물을 얻을 수 있도록 계획하고 있다. 
 
 이러한 어려움을 극복하면서 훌륭한 협력과 문제 해결 능력을 발휘하였으며, 앞으로의 프로젝트에 대한 자신감을 가지고 나아갈 수 있을 것이라 기대한다.
+
+
+&nbsp;
 
 ## 7. 팀원 및 담당 역할  
 
